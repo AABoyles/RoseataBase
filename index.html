@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RoseataBase</title>
+    <script lang="javascript" src="js/xlsx.js"></script>
+    <script lang="javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script lang="javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+    <header>
+        <input id="file" type="file" />
+        <button id="save-button"></button>
+    </header>
+
+    <main class="ui-tabs ui-widget ui-widget-content">
+        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header" role="tablist">
+            <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="ui-id-1" aria-selected="true"><a href="#tabs-1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-1">Default Sheet</a></li>
+        </ul>
+        <table id="tabs-1" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="true" aria-hidden="false">
+            <thead><tr><th>Some Stuff</th><th>More Stuff</th></tr></thead>
+            <tbody><tr><td>Foo</td><td>Bar</td></tr></tbody>
+        </table>
+    </main>
+
+    <div id="save-panel" title="Save File">
+        <input type="text" id="output-filename" placeholder="Filename"></input>
+        <br />
+        <select id="output-filetype">
+            <option value="csv">CSV</option>
+            <option value="tsv">TSV</option>
+            <option value="xls">Excel 95-2000</option>
+            <option value="xlsx">Excel 2003+</option>
+            <option value="sqlite">SQLite</option>
+        </select>
+        <br />
+        <a id="save-link">Save</a>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

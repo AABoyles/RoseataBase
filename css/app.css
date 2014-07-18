@@ -1,0 +1,45 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 25px;
+    background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% 
+}
+main{
+    height: calc(100% - 34px);
+    position: relative;
+    padding-bottom: 3em;
+    border-radius: 0 !important;
+}
+main .ui-tabs-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0em 0.2em 0.2em !important;
+    border-radius: 0 !important;
+}
+main .ui-tabs-nav li {
+    border-top: none;
+    border-bottom: 1px solid #ccc;
+    -moz-border-radius: 0px 0px 4px 4px;
+    -webkit-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
+}
+main .ui-tabs-nav li.ui-tabs-selected, main .ui-tabs-nav li.ui-state-active {
+    top: -2px;
+    border-top: none;
+}
+.ui-tabs-panel.ui-widget-content.ui-corner-bottom {
+    padding:0 !important;
+}
+#download {
+    display:none;
+}
+#save-panel {
+    display: none;
+}
